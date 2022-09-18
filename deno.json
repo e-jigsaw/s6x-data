@@ -1,4 +1,7 @@
 {
-  "tasks": {},
+  "tasks": {
+    "fetch": "deno run --allow-net --allow-write https://raw.githubusercontent.com/e-jigsaw/s6x/b653c6b869a16e07c13c9552777be0afb5790b89/tasks/prepare.ts",
+    "dic": "deno run --allow-read --allow-write https://raw.githubusercontent.com/e-jigsaw/s6x/b653c6b869a16e07c13c9552777be0afb5790b89/tasks/dic.ts"
+  },
   "importMap": "./import_map.json"
 }

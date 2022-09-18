@@ -1,11 +1,9 @@
-name: Batch
+name: dispatch
 
-on:
-  schedule:
-    - cron: 0 19 * * *
+on: workflow_dispatch
 
 jobs:
-  test:
+  batch:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +18,7 @@ jobs:
       - name: Run fetch
         run: |
           deno task fetch
-      
+
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
