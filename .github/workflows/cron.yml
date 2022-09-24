@@ -20,6 +20,8 @@ jobs:
       - name: Run fetch
         run: |
           deno task fetch
+          deno task fetch_pages
+          deno task write_last
 
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
