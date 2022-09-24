@@ -3,6 +3,7 @@
     "fetch": "deno run --allow-net --allow-write fetch.ts",
     "dic": "deno run --allow-read --allow-write dic.ts",
     "fetch_pages": "deno run --allow-read --allow-net --allow-write fetch_pages.ts",
+    "sync": "deno run --allow-read --allow-net --allow-env sync.ts",
     "write_last": "deno run --allow-write write_last.ts"
   },
   "importMap": "./import_map.json"

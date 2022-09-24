@@ -1,11 +1,6 @@
-import pub from "./data/pub.json" assert { type: "json" };
-
-const last = new Date(parseInt(await Deno.readTextFile("./data/LAST")))
-  .getTime();
+import { updatedPages } from "./updated_pages.ts";
 
 let cnt = 0;
-
-const updatedPages = pub.filter((page) => page.updated * 1000 > last);
 
 for (const { title, id } of updatedPages) {
   const res = await fetch(
