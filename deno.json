@@ -1,7 +1,8 @@
 {
   "tasks": {
-    "fetch": "deno run --allow-net --allow-write https://raw.githubusercontent.com/e-jigsaw/s6x/b653c6b869a16e07c13c9552777be0afb5790b89/tasks/prepare.ts",
-    "dic": "deno run --allow-read --allow-write https://raw.githubusercontent.com/e-jigsaw/s6x/b653c6b869a16e07c13c9552777be0afb5790b89/tasks/dic.ts"
+    "fetch": "deno run --allow-net --allow-write fetch.ts",
+    "dic": "deno run --allow-read --allow-write dic.ts",
+    "fetch_pages": "deno run --allow-read --allow-net --allow-write fetch_pages.ts"
   },
   "importMap": "./import_map.json"
 }
