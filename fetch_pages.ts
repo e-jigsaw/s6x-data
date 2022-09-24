@@ -26,3 +26,5 @@ for (const { title, id } of pub) {
   cnt += 1;
   console.log(`${cnt}:${id}.json(${title}) wrote.`);
 }
+
+await Deno.writeTextFile("./data/LAST", new Date().getTime().toString());
