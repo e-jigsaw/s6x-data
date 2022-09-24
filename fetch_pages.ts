@@ -29,5 +29,5 @@ for (const { title, id } of updatedPages) {
     }),
   );
   cnt += 1;
-  console.log(`${cnt}:${id}.json(${title}) wrote.`);
+  console.log(`(${cnt}/${updatedPages.length}):${id}.json(${title}) wrote.`);
 }
