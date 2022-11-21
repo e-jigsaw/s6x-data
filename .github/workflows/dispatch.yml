@@ -20,17 +20,20 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET: ${{ secrets.SUPABASE_SECRET }}
         run: |
+          deno task fetch
+          deno task fetch_pages
           deno task sync
+          deno task write_last
 
-      # - name: git
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     git config --global user.name "batch"
-      #     git config --global user.email "m@jgs.me"
-      #     git remote set-url origin https://e-jigsaw:${GITHUB_TOKEN}@github.com/e-jigsaw/s6x-data.git
-      #     git checkout main
-      #     git status
-      #     git add .
-      #     git commit -m 'Update'
-      #     git push origin HEAD
+      - name: git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "batch"
+          git config --global user.email "m@jgs.me"
+          git remote set-url origin https://e-jigsaw:${GITHUB_TOKEN}@github.com/e-jigsaw/s6x-data.git
+          git checkout main
+          git status
+          git add .
+          git commit -m 'Update'
+          git push origin HEAD
