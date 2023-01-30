@@ -9,7 +9,7 @@
     "ts-run": "node -r esbuild-register"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.5.0",
+    "@supabase/supabase-js": "2.4.1",
     "@types/node": "^18.11.18",
     "esbuild": "^0.17.5",
     "esbuild-register": "^3.4.2",

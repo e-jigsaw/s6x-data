@@ -1,14 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@supabase/supabase-js': ^2.5.0
+  '@supabase/supabase-js': 2.4.1
   '@types/node': ^18.11.18
   esbuild: ^0.17.5
   esbuild-register: ^3.4.2
   typescript: ^4.9.4
 
 dependencies:
-  '@supabase/supabase-js': 2.5.0
+  '@supabase/supabase-js': 2.4.1
   '@types/node': 18.11.18
   esbuild: 0.17.5
   esbuild-register: 3.4.2_esbuild@0.17.5
@@ -255,8 +255,8 @@ packages:
       - encoding
     dev: false
 
-  /@supabase/supabase-js/2.5.0:
-    resolution: {integrity: sha512-8GwMdtx1pOBtNfFryZ/3zZ5erfhz1eA133q4IyvXqXvqxp4uHyjZuJDEhA6HTpdIH0nMAdWZpny1APx7Vrrchw==}
+  /@supabase/supabase-js/2.4.1:
+    resolution: {integrity: sha512-nFePO2yKVip3VI+OyfUOxhv0IyMmZDeieFJS39y84evPOM9zuZomEmkhwnmEWrLFI7hSr+o2QvY4P+q3c2MbGQ==}
     dependencies:
       '@supabase/functions-js': 2.0.0
       '@supabase/gotrue-js': 2.10.0
