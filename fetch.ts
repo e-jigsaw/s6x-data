@@ -1,3 +1,5 @@
+import { writeFile } from "fs/promises";
+
 let pages: any[] = [];
 let skip = 0;
 let count = 0;
@@ -16,7 +18,7 @@ const main = async () => {
       break;
     }
   }
-  await Deno.writeTextFile("./data/pub.json", JSON.stringify(pages));
+  await writeFile("./data/pub.json", JSON.stringify(pages));
 };
 
 main();

@@ -10,20 +10,26 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v3
 
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
+      - uses: pnpm/action-setup@v2
         with:
-          deno-version: v1.x
+          version: 7
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - run: pnpm install
 
       - name: Run fetch
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET: ${{ secrets.SUPABASE_SECRET }}
         run: |
-          deno task fetch
-          deno task fetch_pages
-          deno task sync
-          deno task write_last
+          npm run fetch
+          npm run fetch_pages
+          npm run sync
+          npm run write_last
 
       - name: git
         env:

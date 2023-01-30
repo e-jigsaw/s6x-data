@@ -1,8 +1,9 @@
-import pub from "./data/pub.json" assert { type: "json" };
+import pub from "./data/pub.json";
+import { writeFileSync } from "fs";
 
 let dic: any = {};
 pub.forEach((article: any) => {
   dic[article.title] = article.id;
 });
 
-await Deno.writeTextFile("./data/dic.json", JSON.stringify(dic));
+writeFileSync("./data/dic.json", JSON.stringify(dic));

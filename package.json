@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "s6x-data",
+  "scripts": {
+    "fetch": "node -r esbuild-register fetch.ts",
+    "fetch_pages": "node -r esbuild-register fetch_pages.ts",
+    "sync": "node -r esbuild-register sync.ts",
+    "write_last": "node -r esbuild-register write_last.ts",
+    "ts-run": "node -r esbuild-register"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.5.0",
+    "@types/node": "^18.11.18",
+    "esbuild": "^0.17.5",
+    "esbuild-register": "^3.4.2",
+    "typescript": "^4.9.4"
+  }
+}

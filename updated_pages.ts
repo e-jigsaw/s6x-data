@@ -1,5 +1,6 @@
-import pub from "./data/pub.json" assert { type: "json" };
+import pub from "./data/pub.json";
+import { readFileSync } from "fs";
 
-const last = new Date(parseInt(await Deno.readTextFile("./data/LAST")))
+const last = new Date(parseInt(readFileSync("./data/LAST").toString()))
   .getTime();
 export const updatedPages = pub.filter((page) => page.updated * 1000 > last);
