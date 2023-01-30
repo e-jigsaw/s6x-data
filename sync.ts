@@ -28,6 +28,7 @@ const main = async () => {
   );
 
   console.log(data, error);
+  process.exit();
 };
 
 main();
