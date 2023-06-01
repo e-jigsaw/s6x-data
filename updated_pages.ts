@@ -3,4 +3,6 @@ import { readFileSync } from "fs";
 
 const last = new Date(parseInt(readFileSync("./data/LAST").toString()))
   .getTime();
-export const updatedPages = pub.filter((page) => page.updated * 1000 > last);
+export const updatedPages: any = pub.filter((page) =>
+  page.updated * 1000 > last
+);
