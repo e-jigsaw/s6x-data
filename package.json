@@ -2,20 +2,18 @@
   "private": true,
   "name": "s6x-data",
   "scripts": {
-    "fetch": "node -r esbuild-register fetch.ts",
-    "fetch_pages": "node -r esbuild-register fetch_pages.ts",
-    "sync": "node -r esbuild-register sync.ts",
-    "write_last": "node -r esbuild-register write_last.ts",
-    "ts-run": "node -r esbuild-register"
+    "fetch": "tsx fetch.ts",
+    "fetch_pages": "tsx fetch_pages.ts",
+    "sync": "tsx sync.ts",
+    "write_last": "tsx write_last.ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.5.0",
+    "@supabase/supabase-js": "^2.24.0",
     "@types/node": "^18.11.18",
-    "esbuild": "^0.17.5",
-    "esbuild-register": "^3.4.2",
-    "typescript": "^4.9.4"
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.1.3"
   }
 }
