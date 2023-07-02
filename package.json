@@ -8,7 +8,7 @@
     "write_last": "tsx write_last.ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.24.0",
+    "@supabase/supabase-js": "^2.26.0",
     "@types/node": "^18.11.18",
     "tsx": "^3.12.7",
     "typescript": "^5.1.3"
