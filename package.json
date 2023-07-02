@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.26.0",
-    "@types/node": "^18.11.18",
+    "@types/node": "^20.3.3",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
   },
