@@ -11,7 +11,7 @@
   "dependencies": {
     "@progfay/scrapbox-parser": "^8.1.0",
     "@supabase/supabase-js": "^2.26.0",
-    "@types/node": "^18.11.18",
+    "@types/node": "^20.6.5",
     "date-fns": "^2.30.0",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
