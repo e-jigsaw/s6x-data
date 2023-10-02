@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@progfay/scrapbox-parser": "^8.1.0",
-    "@supabase/supabase-js": "^2.26.0",
+    "@supabase/supabase-js": "^2.37.0",
     "@types/node": "^18.11.18",
     "date-fns": "^2.30.0",
     "tsx": "^3.12.7",
