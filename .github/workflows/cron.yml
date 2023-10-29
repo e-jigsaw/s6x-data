@@ -45,3 +45,6 @@ jobs:
           git add .
           git commit -m 'Update'
           git push origin HEAD
+      - env:
+          HOOK_URL: ${{ secrets.HOOK_URL }}
+        run: curl -X POST -d {} $HOOK_URL
