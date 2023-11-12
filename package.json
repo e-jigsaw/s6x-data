@@ -6,7 +6,8 @@
     "fetch_pages": "tsx fetch_pages.ts",
     "sync": "tsx sync.ts",
     "write_last": "tsx write_last.ts",
-    "yearly": "tsx yearly.ts"
+    "yearly": "tsx yearly.ts",
+    "views": "tsx views.ts"
   },
   "dependencies": {
     "@progfay/scrapbox-parser": "^8.1.0",

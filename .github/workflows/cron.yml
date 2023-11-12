@@ -27,11 +27,13 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET: ${{ secrets.SUPABASE_SECRET }}
+          PIXE_LA_TOKEN: ${{ secrets.PIXE_LA_TOKEN }}
         run: |
           npm run fetch
           npm run fetch_pages
           npm run sync
           npm run write_last
+          npm run views
 
       - name: git
         env:
