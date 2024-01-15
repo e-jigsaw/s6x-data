@@ -1,7 +1,5 @@
 import { readFile, writeFile } from "fs/promises";
-import format from "date-fns/format";
-import subDays from "date-fns/subDays";
-import getHours from "date-fns/getHours";
+import {format, subDays, getHours} from "date-fns";
 import master from "./data/pub.json";
 
 const PATH = "./data/COUNT";
